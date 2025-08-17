@@ -49,9 +49,10 @@ body{
     align-items: center;
     margin: 5% 15%;
     justify-content: space-between;
+    gap: 82px;  
 }
 .presentacion__contenido {
-    width: 610px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -83,7 +84,7 @@ body{
 .presentacion__contenido__enlaces__link {
     display: flex;
     justify-content: center;
-    width: 378px;
+    width: 50%;
     text-align: center;
     padding: 21.5px 0;
     border-radius: 8px;
@@ -98,6 +99,10 @@ body{
 .presentacion__contenido__enlaces__link:hover {
     background-color: var(--color-hover);;
 }
+.imagen {
+    width: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 .foother {
     text-align: center;
     padding: 24px;
@@ -105,4 +110,25 @@ body{
     font-size: 1rem; /* 16px -> 1rem */
     color: var(--color-primario);;
     background-color: var(--color-terciario);;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10% 0% 0% 0%;
+        text-align: center;
+    }
+    .header_menu {
+    justify-content: center;
+    }
+    .presentacion {
+        flex-direction: column-reverse ;
+        padding: 5% 0%;
+    }
+    .presentacion__contenido {
+        width: 100%;
+    }
+    .imagen {
+        width: 100%;
+    }
+
 }
